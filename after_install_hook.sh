@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-cd ~/application
+cd ~/node
 yarn
 
 # setup NODE_ENV
@@ -19,6 +19,6 @@ fi
 # add node to startup
 hasRc=`grep "su -l $USER" /etc/rc.d/rc.local | cat`
 if [ -z "$hasRc" ]; then
-    sudo sh -c "echo 'su -l $USER -c \"cd ~/application;sh ./application_start_hook.sh\"' >> /etc/rc.d/rc.local"
+    sudo sh -c "echo 'su -l $USER -c \"cd ~/node;sh ./application_start_hook.sh\"' >> /etc/rc.d/rc.local"
 fi
 
