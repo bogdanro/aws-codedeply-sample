@@ -4,4 +4,4 @@ if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
 fi
 
 cd ~/node
-npm start &
+pm2 start index.js
