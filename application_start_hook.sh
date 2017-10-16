@@ -3,5 +3,5 @@ if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
  export NODE_ENV=$DEPLOYMENT_GROUP_NAME
 fi
 
-cd ~/application
+cd ~/node
 npm start &
