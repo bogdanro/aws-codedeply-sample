@@ -12,6 +12,7 @@ permissions:
       - file
 hooks:
   AfterInstall:
+<<<<<<< HEAD
     - location: ../../../../../../../../home/ec2-user/aws-codedeploy-scripts/application_stop_hook.sh
       timeout: 600
       runas: ec2-user
@@ -25,5 +26,20 @@ hooks:
       runas: ec2-user
   ValidateService:
     - location: ../../../../../../../../home/ec2-user/aws-codedeploy-scripts/application_stop_hook.sh
+=======
+    - location: /home/ec2-user/aws-codedeploy-scripts/after_install_hook.sh
+      timeout: 600
+      runas: ec2-user
+  ApplicationStart:
+    - location: /home/ec2-user/aws-codedeploy-scripts/application_start_hook.sh
+      timeout: 60
+      runas: ec2-user
+  ApplicationStop:
+    - location: /home/ec2-user/aws-codedeploy-scripts/application_stop_hook.sh
+      timeout: 60
+      runas: ec2-user
+  ValidateService:
+    - location: /home/ec2-user/aws-codedeploy-scripts/validate_service_hook.sh
+>>>>>>> parent of 2b75b9f... new path fix
       timeout: 60
       runas: ec2-user
