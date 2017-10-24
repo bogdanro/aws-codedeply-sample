@@ -7,20 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bogdanro/aws-codedeply-sample.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/bogdanro/aws-codedeply-sample.git",
+  "author": "[bogdanro] <gitlab@bogdanr.ro>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bogdanro/aws-codedeply-sample/issues"
   },
   "homepage": "https://github.com/bogdanro/aws-codedeply-sample#readme",
   "dependencies": {
-    "ejs": "latest",
-    "aws-sdk": "latest",
-    "express": "latest",
-    "body-parser": "latest"
-  }
+    "aws-sdk": "^2.140.0",
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  },
+  "private": true
 }
