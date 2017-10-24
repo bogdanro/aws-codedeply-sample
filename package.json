@@ -17,7 +17,10 @@
     "url": "https://github.com/bogdanro/aws-codedeply-sample/issues"
   },
   "homepage": "https://github.com/bogdanro/aws-codedeply-sample#readme",
-  "devDependencies": {
-    "express": "^4.16.2"
+  "dependencies": {
+    "ejs": "latest",
+    "aws-sdk": "latest",
+    "express": "latest",
+    "body-parser": "latest"
   }
 }
