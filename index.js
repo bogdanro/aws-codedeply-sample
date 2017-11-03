@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 8081))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello World, from github, automatic push codepipeline beanstalk, yarn install pac pac')
+  response.send('Hello World, 49yarn')
 })
 
 app.listen(app.get('port'), function() {
